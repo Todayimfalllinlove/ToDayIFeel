@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.main-nav {
+    background-color: var(--background-light);
+}
+.nav-link {
+    font-size: 17px;
+    color: var(--text-medium);
+}
+.nav-link:hover {
+    background: -webkit-linear-gradient(var(--gradient-purple-start), var(--gradient-purple-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.img-logo {
+    background-image: linear-gradient(to right, var(--gradient-purple-start), var(--gradient-purple-end));
+    cursor: pointer;
+}
+.logo {
+    background: -webkit-linear-gradient(var(--gradient-purple-start), var(--gradient-purple-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+         

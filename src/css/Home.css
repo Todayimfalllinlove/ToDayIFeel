@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.header {
+    background: -webkit-linear-gradient(var(--gradient-purple-start), var(--gradient-purple-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sparkle {
+     background-image: linear-gradient(to right, var(--gradient-purple-start), var(--gradient-purple-end));
+     cursor: pointer;
+}
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+}
+.q-display {
+    background: linear-gradient(
+    to right,
+    rgba(147, 51, 234, 0.4), 
+    rgba(168, 85, 247, 0.2)
+  );
+  border-radius: 8px;
+
+}
+.q-display p {
+    color: var(--text-card);
+}
+.header-q {
+    color: var(--text-card);
+}

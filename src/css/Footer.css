@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+footer {
+    background-color: var(--background-light);
+}
+.footer-link {
+    color: var(--text-light);
+
+}
+.footer-link:hover {
+    background: -webkit-linear-gradient(var(--gradient-purple-start), var(--gradient-purple-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.right {
+    color: var(--text-light);
+}

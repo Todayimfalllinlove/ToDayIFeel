@@ -1,0 +1,164 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(23, 22, 22, 0.87);
+  background-color: #f8f7f7;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Dark mode styles */
+  --background: #ffffff;
+  --text: #000000;
+}
+
+.container {
+  max-width: 1200px; 
+  margin-left: auto;
+  margin-right: auto; 
+  padding-left: 1rem;  
+  padding-right: 1rem;
+}
+.bg-dark {
+  background-color: var(--background-light);  
+ 
+}
+
+.btn {
+  background-image: linear-gradient(to right, var(--gradient-purple-start), var(--gradient-purple-end));
+  padding: 8px 15px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+} 
+h1 {
+    color: var(--text-dark);
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+p {
+    color: var(--text-medium);
+}
+.toggle-btn {
+   color: var(--icon-gray);
+}
+.custom-select{
+    background-color: var(--primary-purple);
+     color: var(--text);
+     border: 1px solid gray;
+}
+textarea:focus {
+  outline: none;
+}
+.upload {
+  background-color: var(--background);
+}
+
+
+/* Default (Light) Theme */
+:root {
+  --primary-purple: #7a58e4;
+  --secondary-purple: #9c7bff;
+  --light-purple: #d1c7f5;
+  --dark-purple-text: #4a348b;
+  --gradient-purple-start: #a62ffb;
+  --gradient-purple-end: #6653f4;
+
+  /* Neutral / Background Colors (เทา/ขาว) */
+  --background-light: #f7f7fa;
+  --card-background: #ffffff;
+  --text-dark: #333333;
+  --text-medium: #555555;
+  --text-light: #777777;
+  --border-light: #e0e0e0;
+  --icon-gray: #666666;
+  --card-bg: #f7f7f7;
+  --text-card:#9d1ff7;
+
+  /* Call to Action / Highlight Colors */
+  --button-primary-bg: var(--primary-purple);
+  --button-primary-text: #ffffff;
+  --button-secondary-bg: #ffffff;
+  --button-secondary-text: var(--primary-purple);
+  --button-hover-bg: #8c6fe9;
+
+  /* Specific Elements */
+  --input-border: #cccccc;
+  --placeholder-text: #aaaaaa;
+  --active-tab-bg: #ffffff;
+  --active-tab-text: var(--text-dark);
+  --inactive-tab-text: var(--text-light);
+  --invite-button-border: #e0e0e0;
+  --card-border: #ebebeb;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+
+/* Dark Mode */
+.dark {
+  /* Dark theme background and text */
+  --background: #1a1a1a;
+  --text: #ffffff;
+
+  /* Dark theme purple variations */
+  --primary-purple: #9c7bff;
+  --secondary-purple: #b08dff;
+  --light-purple: #2a2a2a;
+  --dark-purple-text: #d1c7f5;
+  --gradient-purple-start: #a62ffb;
+  --gradient-purple-end: #6653f4;
+
+  /* Dark theme neutral colors */
+  --background-light: #2a2a2a;
+  --card-background: #333333;
+  --text-dark: #ffffff;
+  --text-medium: #e3e1e1;
+  --text-light: #999999;
+  --border-light: #404040;
+  --icon-gray: #cccccc;
+  --card-bg: #160f26;
+  --text-card:#f7f7f7;  
+
+  /* Dark theme button colors */
+  --button-primary-bg: var(--primary-purple);
+  --button-primary-text: #ffffff;
+  --button-secondary-bg: #333333;
+  --button-secondary-text: var(--primary-purple);
+  --footer-hover-bg: #8c6fe9;
+
+  /* Dark theme specific elements */
+  --input-border: #404040;
+  --placeholder-text: #666666;
+  --active-tab-bg: #333333;
+  --active-tab-text: #ffffff;
+  --inactive-tab-text: #999999;
+  --invite-button-border: #404040;
+  --card-border: #a62ffb ;
+}
+
+/* Animation for transitions */
+* {
+  transition: background-color 0.1s ease, color 0.3s ease, border-color 0.1s ease;
+}
