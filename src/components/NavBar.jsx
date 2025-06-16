@@ -5,7 +5,7 @@ import { Brain, Menu, X, Loader2 } from "lucide-react"
 import DarkMode from "./DarkMode"
 import useUser from "../hooks/useUser"
 import { supabase } from "../js/supabaseClient"
-import '../css/NavBar.css'
+import '../css/Navbar.css'
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
