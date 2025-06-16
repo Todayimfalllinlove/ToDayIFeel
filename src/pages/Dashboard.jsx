@@ -79,7 +79,7 @@ function Dashboard() {
 
                 {/* Journals */}
                 <div className="journals w-full md:w-2/3">
-                    <h2 className="text-4xl font-bold leading-tight mb-6 text-center">Your Journal Entries</h2>
+                    <h2 className="text-4xl font-bold leading-tight mb-6 text-center">My Journal Entries</h2>
 
                     {journalEntries.length === 0 ? (
                         <div className="text-center">
