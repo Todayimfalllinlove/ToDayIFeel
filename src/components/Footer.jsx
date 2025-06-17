@@ -11,8 +11,8 @@ function Footer() {
               <div className="flex flex-col md:flex-row justify-between items-center">
 
                 <div className="flex items-center space-x-6 mb-3 md:mb-0">
-                  <a href="#" className="footer-link transition-colors">Instagram</a>
-                  <a href="#" className="footer-link transition-colors">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/me/" className="footer-link transition-colors">Instagram</a>
+                  <a href="https://github.com/Todayimfalllinlove" className="footer-link transition-colors">Github</a>
                 </div>
 
                 <div className="flex items-center space-x-2">
